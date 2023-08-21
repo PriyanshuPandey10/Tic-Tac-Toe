@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+nav ul{
+    list-style-type: none ;
+}
+nav{
+    background-color:black;
+    color:white;
+    height:40px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    font-family: 'Sigmar', cursive;
+}
+
+.linedraw{
+    border: 3px solid red;
+    height: 0px;
+    width: 400px;
+    position: absolute;
+    left: 205px;
+    top: 200px;
+}
+.linedraw2{
+    border: 3px solid red;
+    height: 400px;
+    width: 0px;
+    position: absolute;
+    left: 260px;
+    top: 130px;
+}
+.linedraw3{
+    border: 3px solid red;
+    height: 400px;
+    width: 0px;
+    position: absolute;
+    left: 400px;
+    top: 130px;
+}
+.linedraw4{
+    border: 3px solid red;
+    height: 400px;
+    width: 0px;
+    position: absolute;
+    left: 540px;
+    top: 130px;
+}
+.linedraw5{
+    border: 3px solid red;
+    height: 0px;
+    width: 400px;
+    position: absolute;
+    left: 205px;
+    top: 340px;
+}
+.linedraw6{
+    border: 3px solid red;
+    height: 0px;
+    width: 400px;
+    position: absolute;
+    left: 205px;
+    top: 470px;
+}
+.linedraw8{
+    border: 3px solid red;
+    height: 490px;
+    width: 0px;
+    position: absolute;
+    left: 405px;
+    top: 85px;
+    transform: rotate(45deg);
+}
+.linedraw7{
+    border: 3px solid red;
+    height: 490px;
+    width: 0px;
+    position: absolute;
+    left: 405px;
+    top: 85px;
+    transform: rotate(-45deg);
+}
+*{
+    margin:0;
+    padding:0;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:grey ;
+    
+}
+.container{
+    margin-top: 50px;
+    margin-bottom: 150PX;
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family:'Sigmar', cursive;
+    
+}
+.box{
+    border: 3px solid black;
+    font-size: 6vw;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color:rgb(55, 55, 100);
+}
+.gameinfo{
+    padding:30px;
+    font-family: 'Baloo Bhaina 2',cursive;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s is ease-in-out;
+}
+.br-0{
+    border-right:0;
+}
+.bl-0{
+    border-left:0;
+}
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom:0;
+}
+#reset{
+    margin:20px;
+    padding:6px 14px;
+    background: rgb(83, 83, 148);
+    border-radius: 7px;
+    cursor: pointer;
+    font-size:20px;
+    font-family:'Baloo Bhaina 2',cursive ;
+}
+.info{
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 950px)
+{
+      .container{
+        flex-wrap: wrap;
+      }
+      .gameinfo{
+        margin-top: 34px;
+      }
+      .gameinfo h1{
+        font-size: 2.5rem;
+      }
+      .container{
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+      }
+        
+}
